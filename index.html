@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.3.1/css/bulma.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/styles.css">
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="js/script.js"></script>
+    <script src="js/typed.js"></script>
+    <script type="text/javascript" src=js/jquery-1.11.1.min.js></script>
+    <script type="text/javascript" src="js/jquery.particleground.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+</head>
+
+<body>
+
+<main id="main">
+
+    <div id="particles">
+        <div id="intro">
+            <h1><span class="name"></span></h1>
+            <h5 class="animated animatedFadeInUp fadeInUp">
+                Student and WebDeveloper
+            </h5>
+        </div>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                particleground(document.getElementById('particles'), {
+                    dotColor: '#A8A8A8',
+                    lineColor: '#A8A8A8'
+                });
+                let intro = document.getElementById('intro');
+                intro.style.marginTop = - intro.offsetHeight / 2 + 'px';
+            }, false);
+        </script>
+        <script>
+            let typed = new Typed('.name', {
+                strings: ['<span style="color: #B3A369">Parimal Talaviya</span>'],
+                typeSpeed: 65,
+                startDelay: 150,
+                loop: false,
+                cursorChar: '_'
+            });
+        </script>
+    </div>
+
+    <section id="section-a">
+
+        <h2 class="section-a-title" data-aos="fade-left" data-aos-duration="1000" data-aos-once="true">
+            ABOUT ME
+        </h2>
+
+        <div class="container my-3 py-5 text-center">
+            <div class="row">
+                <div class="col-lg-4 col-sm-12">
+                    <div class="card" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+                        <div class="card-body">
+                            <i class="fas fa-university fa-5x circle-icon focus-icon"></i>
+                            <h3 class="card-title">Education</h3>
+                            <h4 class="card-caption">
+                                • Student at Nirma University,Ahemedabad ,India
+                            </h4>
+                            <h4 class="card-caption">
+                                • B.Tech Computer science and engineering
+                            </h4>
+                            <h4 class="card-caption">
+                                • CGPA :8.6
+                            </h4>
+                            <h4 class="card-caption">
+                                • Concentrations in
+                                <a href="https://www.cc.gatech.edu/intelligence" rel="noreferrer noopener"
+                                   target="_blank" class="hyper-link">
+                                    web development
+                                </a> and
+                                <a href="https://www.cc.gatech.edu/systems-architecture" rel="noreferrer noopener"
+                                   target="_blank" class="hyper-link">
+                                    problem solving
+                                </a>
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-12">
+                    <div class="card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100" data-aos-once="true">
+                        <div class="card-body">
+                            <i class="fas fa-desktop fa-5x circle-icon focus-icon"></i>
+                            <h3 class="card-title">Languages & Frameworks<br>Learned</h3>
+                            <h4 class="card-caption">• Java</h4>
+                            <h4 class="card-caption">• JavaScript</h4>
+                            <h4 class="card-caption">• C/C++</h4>
+                            <h4 class="card-caption">• Python</h4>
+                            <h4 class="card-caption">• HTML</h4>
+                            <h4 class="card-caption">• CSS</h4>
+                            <!-- <h4 class="card-caption">• React</h4> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-12">
+                    <div class="card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" data-aos-once="true">
+                        <div class="card-body">
+                            <i class="fas fa-pencil-alt fa-5x circle-icon focus-icon"></i>
+                            <h3 class="card-title">Relevant Coursework</h3>
+                            <h4 class="card-caption">
+                                • Object-Oriented Programming in Java
+                            </h4>
+                            <h4 class="card-caption">
+                                • Data Structures & Algorithms in C/C++
+                            </h4>
+                            <h4 class="card-caption">
+                                • Database management system
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h6 class="graph-title" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true">
+            SKILLS BREAKDOWN
+        </h6>
+
+        <div id="skills">
+            <div id="apps" data-aos="zoom-in" data-aos-duration="1500" data-aos-once="true">
+                <p class="graph-label">Java</p>
+                <p class="graph-label">JavaScript</p>
+                <p class="graph-label">C/C++</p>
+                <p class="graph-label">Python</p>
+            </div>
+
+            <div class="grid">
+                <div class="bar pct-90">
+                    <div class="inner" data-aos="slide-right" data-aos-duration="1000"
+                         data-aos-anchor-placements="left" data-aos-once="true"></div>
+                </div>
+                <div class="bar pct-60">
+                    <div class="inner" data-aos="slide-left" data-aos-duration="700"
+                         data-aos-anchor-placements="left" data-aos-once="true"></div>
+                </div>
+                <div class="bar pct-60">
+                    <div class="inner" data-aos="slide-left" data-aos-duration="1200"
+                         data-aos-anchor-placements="left" data-aos-once="true"></div>
+                </div>
+                <div class="bar pct-50">
+                    <div class="inner" data-aos="slide-right" data-aos-duration="700"
+                         data-aos-anchor-placements="left" data-aos-once="true"></div>
+                </div>
+
+                <div class="v-divider one"></div>
+                <div class="v-divider two"></div>
+                <div class="v-divider three"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="section-b">
+
+        <h2 class="section-b-title" data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">
+            PROJECTS
+        </h2>
+
+        <div class="container my-2 py-5">
+
+            <div class="project-card" data-aos="fade-left" data-aos-duration="1000" data-aos-once="true">
+                <img class="image" src="assets/images/stockanalysis.jpeg" alt=""/>
+                <div>
+                    <h3>
+                        
+                        Stock management Sytem
+                        
+                    </h3>
+                   
+                    <p class="project-description">
+                        •This web application allows users to view real-time stock analysis by plotting
+                        various charts like a candlestick, line chart. To get real-time stock
+                        information we used Yahoo and BSE APIs
+                        <br>
+                    </p>
+                </div>
+            </div>
+            <br><br><br><br><br><br>
+            <div class="project-card" data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">
+                <a href="https://github.com/Hayden50/Portfolio" target="_blank">
+                    <img src="assets/images/downloadmanager.jpeg" alt="" class="image"/>
+                </a>
+                <div>
+                    <h3>
+                        
+                            Download manager
+                        
+                    </h3>
+                    <p class="project-description">
+                        • It's GUI based application that allows the user to download video from
+                        YouTube through the video link and save files at the desired location. It also
+                        allows downloading any kind of file from the internet into their device.
+                        <br>
+                    </p>
+                </div>
+            </div>
+
+            
+        </div>
+
+    </section>
+
+    <section id="section-c">
+
+        <h2 class="section-c-title" data-aos="fade-left" data-aos-duration="1000" data-aos-once="true">
+            CONTACT ME
+        </h2>
+
+        <div class="contact-icons space-around">
+            <div>
+                <a href="https://www.linkedin.com/in/parimal-talaviya-043525190" class="icons">
+                    <i class="fab fa-linkedin fa-5x linkedin"></i>
+                </a>
+            </div>
+            <div>
+                <a href="mailto:pntalaviya18@gmail.com" class="icons">
+                    <i class="fas fa-envelope-open fa-5x mail"></i>
+                </a>
+            </div>
+            
+        </div>
+
+    </section>
+
+</main>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
+</body>
+
+</html>
